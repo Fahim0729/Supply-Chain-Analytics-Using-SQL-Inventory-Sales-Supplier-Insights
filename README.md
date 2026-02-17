@@ -41,11 +41,31 @@ The questions have been solved using SQL queries, and the SQL functions applied 
 
 ### 📌 Q1. Brand Inventory Value Analysis
 **Identify brands with significant restocking activity (>50 units) in the second half of 2025 (July-December) and analyze their average shelf inventory value to optimize supply chain planning for next year.**
+🔹 SQL Functions: SUM(), AVG(), JOIN, BETWEEN, WHERE, GROUP BY, HAVING
 
-SQL Aggregate and Filtering Functions : SUM(), AVG(), JOIN, BETWEEN, WHERE, GROUP BY, HAVING 
+### 📌 Q2. Product Sales Velocity
+**Identify the top 5 products by total quantity sold and categorize them as High, Medium, or Low velocity to understand sales performance trends.**
+🔹 SQL Functions: CTEs, JOIN, RANK(), ORDER BY, CASE
 
-#### Q2. Identify the top 5 products by total quantity sold and categorize them as High, Medium, or Low velocity to understand sales performance trends.
-SQL CTEs with Ranking and Conditional Logic: CTEs, JOIN, RANK(), ORDER BY, CASE
+### 📌 Q3. Supplier Restocking Trend Analysis
+**Identify the top 3 suppliers with the largest positive change in received quantity by comparing their most recent delivery to their previous delivery, to understand suppliers with significant restocking trends.**
+🔹 SQL Functions: Subquery, JOIN, LAG, ROW_NUMBER, RANK, ROUND, Filtering Logic
 
-#### Q3. Identify the top 3 suppliers with the largest positive change in received quantity by comparing their most recent delivery to their previous delivery, to understand suppliers with significant restocking trends.
-SQL Subquery with Window Functions: Subquery, JOIN, LAG, ROW_NUMBER, RANK, ROUND, and filtering logic
+
+---
+
+## 🚀 Key Insights
+
+| Analysis | Business Impact |
+|----------|-----------------|
+| **Brand Value Analysis** | Optimize inventory planning for 2026 |
+| **Product Performance** | Identify sales velocity trends for top products |
+| **Supplier Trends** | Recognize improving supplier relationships |
+
+---
+
+<div align="center">
+  
+**[⬆ Back to Top](#-supply-chain-insights-product-performance-brand-value-supplier-trends)**
+
+</div>
