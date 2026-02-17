@@ -1,1 +1,1 @@
-# Supply Chain Analytics Using SQL: Inventory, Sales & Supplier Insights
+## Supply Chain Analytics Using SQL: Inventory, Sales & Supplier Insights
