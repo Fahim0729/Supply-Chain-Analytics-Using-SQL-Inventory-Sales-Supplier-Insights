@@ -4,6 +4,8 @@
 
 #### SQL Functions & Features Used: SUM(), AVG(), JOIN(), WHERE(), BETWEEN(), GROUP BY(), HAVING(), CTEs, RANK(), ROW_NUMBER(), LAG(), ORDER BY(), CASE, Subquery, ROUND(), and filtering logic
 
+The SQL_Portfolio database was created with five tables to address the business questions of the electronics company. Among these, three are dimension tables — product, suppliers, and datetime — and two are fact tables — received_purchase_orders and stock_level. All tables, except the datetime table, were populated from the staging database, where four external Excel files related to product, suppliers, received_orders, and stock_level had been previously uploaded. The datetime table was created using a SQL script that generates dates from January 1, 2025, to December 31, 2025.
+
 The follwoing figure depicts the database tables along with the data generation plan used to populate them.
 
 ![image alt](https://github.com/Fahim0729/Supply-Chain-Analytics-Using-SQL-Inventory-Sales-Supplier-Insights/blob/9926429eb37e25222dc4a0924a6475671eb8c358/Data_Generation_Plan.png)
