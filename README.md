@@ -39,7 +39,7 @@ Each fact table is connected to the three dimension tables, establishing relatio
 
 ## 📋 Business Questions & SQL Functions
 
-The questions have been solved using SQL queries, and the SQL functions applied to solve them are listed below:
+The following section presents the answers to the questions along with the SQL queries used, and lists the SQL functions applied to solve each question.
 
 ### 📌 Q1. Brand Inventory Value Analysis
 **Identify brands with significant restocking activity (>50 units) in the second half of 2025 (July-December) and analyze their average shelf inventory value to optimize supply chain planning for next year.**
@@ -59,6 +59,7 @@ However, Sony had the highest average stock value despite being in 5th position 
 ### 📌 Q2. Product Sales Velocity
 **Identify the top 5 products by total quantity sold and categorize them as High (more than 90 units) Medium (60 to 90 units), or 
 Low velocity (less than 60 units) to understand sales performance trends.**
+
 🔹 SQL Functions: CTEs, JOIN, RANK(), ORDER BY, CASE
 
 Products were classified into High (more than 90 units), Medium (60–90 units), and Low velocity (less than 60 units) categories based on total quantity sold. The top five products were ranked by total sales volume and assigned their respective velocity categories. The Manfrotto MN1004BAC Master Light Stand, Manfrotto MT057C3 Carbon Fibre 3 Section Geared, and Rycote 37705 Portable Recorder Suspension occupied the 1st to 3rd positions and were classified as High Velocity. The Hoya 37S-HOY 37MM Skylight Filter and HOYA 40.5mm CP Filter – Slim were 4th and 5th, classified as Medium Velocity.
