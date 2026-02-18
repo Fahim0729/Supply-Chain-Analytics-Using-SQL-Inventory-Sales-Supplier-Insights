@@ -1,5 +1,5 @@
 
--- Q-1. Identify brands that received significant restocking (more than 50 units) in the second half of 2025 (July–December) and 
+-- Q-1. Identify brands that received significant restocking (more than 50 units) in the second half of 2025 (Julyâ€“December) and 
 --      analyze their average shelf inventory value to support supply chain optimization for 2026.
 
 -- SQL Aggregate and Filtering Functions: SUM(), AVG(), JOIN, BETWEEN, WHERE, GROUP BY, HAVING 
