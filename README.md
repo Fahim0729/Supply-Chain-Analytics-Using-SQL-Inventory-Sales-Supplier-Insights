@@ -44,24 +44,39 @@ The questions have been solved using SQL queries, and the SQL functions applied 
 ### 📌 Q1. Brand Inventory Value Analysis
 **Identify brands with significant restocking activity (>50 units) in the second half of 2025 (July-December) and analyze their average shelf inventory value to optimize supply chain planning for next year.**
 
+🔹 SQL Functions: SUM(), AVG(), JOIN, BETWEEN, WHERE, GROUP BY, HAVING
+
+The top five brands were JVC, MSCS, Sennheiser, Sony, and Toshiba, whose restocking activity exceeded 50 units between June and December 2025. The electronics company received the highest number of units (543) from MSCS, followed by Toshiba with 202 units. Sennheiser, JVC, and Sony ranked 3rd, 4th, and 5th respectively in terms of total received units.
+However, Sony had the highest average stock value despite being in 5th position based on total received units. In contrast, Toshiba recorded the lowest average stock value among the five brands.
+The figure below illustrates the stock analysis results, showing total received units and average stock value by brand between July and December 2025.
 ![Q1](https://github.com/Fahim0729/Supply-Chain-Analytics-Using-SQL-Inventory-Sales-Supplier-Insights/blob/28f41ad3b6e538d1e7a947c404e91475f4f7f43f/Q1.png)
 
 
-🔹 SQL Functions: SUM(), AVG(), JOIN, BETWEEN, WHERE, GROUP BY, HAVING
+
 
 ### 📌 Q2. Product Sales Velocity
-**Identify the top 5 products by total quantity sold and categorize them as High, Medium, or Low velocity to understand sales performance trends.**
+**Identify the top 5 products by total quantity sold and categorize them as High (more than 90 units) Medium (60 to 90 units), or 
+Low velocity (less than 60 units) to understand sales performance trends.**
+🔹 SQL Functions: CTEs, JOIN, RANK(), ORDER BY, CASE
 
+Products were classified into High (more than 90 units), Medium (60–90 units), and Low velocity (less than 60 units) categories based on total quantity sold. The top five products were ranked by total sales volume and assigned their respective velocity categories. The Manfrotto MN1004BAC Master Light Stand, Manfrotto MT057C3 Carbon Fibre 3 Section Geared, and Rycote 37705 Portable Recorder Suspension occupied the 1st to 3rd positions and were classified as High Velocity. The Hoya 37S-HOY 37MM Skylight Filter and HOYA 40.5mm CP Filter – Slim were 4th and 5th, classified as Medium Velocity.
+
+The figure illustrates these rankings and classifications
 ![Q2](https://github.com/Fahim0729/Supply-Chain-Analytics-Using-SQL-Inventory-Sales-Supplier-Insights/blob/28f41ad3b6e538d1e7a947c404e91475f4f7f43f/Q2.png)
 
-🔹 SQL Functions: CTEs, JOIN, RANK(), ORDER BY, CASE
+
 
 ### 📌 Q3. Supplier Restocking Trend Analysis
 **Identify the top 3 suppliers with the largest positive change in received quantity by comparing their most recent delivery to their previous delivery, to understand suppliers with significant restocking trends.**
 
+🔹 SQL Functions: Subquery, JOIN, LAG, ROW_NUMBER, RANK, ROUND, Filtering Logic
+
+The analysis identifies the top three suppliers with the largest positive change in received quantity by comparing their most recent delivery to the previous one. Samsung recorded the highest increase, receiving 90 units on 20 December 2025, which was 20 units more than its previous delivery. ENE followed with a delivery of 77 units on 2 December 2025, representing an increase of 15 units, while Toshiba ranked third with 64 units received on 14 November 2025, 14 units higher than its prior delivery. These results highlight suppliers exhibiting significant restocking trends during the period.
+
+The figure below presents the most recent deliveries of suppliers with the largest positive changes in received quantity.
 ![Q3](https://github.com/Fahim0729/Supply-Chain-Analytics-Using-SQL-Inventory-Sales-Supplier-Insights/blob/28f41ad3b6e538d1e7a947c404e91475f4f7f43f/Q3.png)
 
-🔹 SQL Functions: Subquery, JOIN, LAG, ROW_NUMBER, RANK, ROUND, Filtering Logic
+
 
 
 ---
