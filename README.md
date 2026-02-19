@@ -22,7 +22,7 @@ The `SQL_Portfolio` database was created with five tables to address the busines
 | • datetime | |
 
 ### 📈 Data Generation Plan
-All tables, except the datetime table, were populated from the staging database, where four external Excel files related to product, suppliers, received_orders, and stock_level had been previously uploaded. The datetime table was created using a SQL script that generates dates from January 1, 2025, to December 31, 2025.
+All tables, except the datetime table, were populated from the `staging database`, where four external Excel files related to product, suppliers, received_orders, and stock_level had been previously uploaded. The datetime table was created using a SQL script that generates dates from January 1, 2025, to December 31, 2025.
 
 *The following figure depicts the database tables name along with the data generation plan used to populate them.*
 <p align="center">
@@ -53,7 +53,7 @@ The following section presents the answers to the questions along with the SQL q
 
 🔹 SQL Functions: SUM(), AVG(), JOIN, BETWEEN, WHERE, GROUP BY, HAVING
 
-📝 The top five brands were JVC, MSCS, Sennheiser, Sony, and Toshiba, whose restocking activity exceeded 50 units between June and December 2025. The electronics company received the highest number of units (543) from MSCS, followed by Toshiba with 202 units. Sennheiser, JVC, and Sony ranked 3rd, 4th, and 5th respectively in terms of total received units.
+📝 The brands JVC, MSCS, Sennheiser, Sony, and Toshiba had restocking activity exceeded 50 units between June and December 2025. The electronics company received the highest number of units (543) from MSCS, followed by Toshiba with 202 units. Sennheiser, JVC, and Sony ranked 3rd, 4th, and 5th respectively in terms of total received units.
 However, Sony had the highest average stock value despite being in 5th position based on total received units. In contrast, Toshiba recorded the lowest average stock value among the five brands.
 
 *The figure below illustrates the stock analysis results, showing total received units and average stock value by brand between July and December 2025.*
